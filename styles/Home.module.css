@@ -1,122 +1,136 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url('../public/images/Mlp_Hero_Br_&_Rola_Desktop_v2.jpg');
+  background-position: center;
+  background-size: 100%;
+
+  position: absolute;
+  top: 0;
+ 
 }
 
-.footer img {
-  margin-left: 0.5rem;
+.principal {
+  
+ height: 100%;
+
+ display: flex;
+  
+ position: relative;
+  
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
+.homebutton {
+  position: absolute;
+  background-color: red;
+  top: 15px;
+  background-color: rgba(0,0,0,.6);
+  padding: 8px 16px;
+  right: 30px;
+  color: white;
   border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  border: 1px solid white;
+  text-align: center;
+  transition: 0.2s ease;
+  letter-spacing: 1.5px;
 }
 
-.grid {
+.homebutton:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.homebutton:active {
+  transform: scale(0.98);
+  
+}
+
+.LogoWrapper {
+  margin-left: 3em;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  flex-direction: column;
+  margin-top: 7.5em;
+
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.Logo {
+  width: 13%;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.LogoTitle {
+  color: white;
+  font-size: 2.3em;
+  font-weight: 500;
+
+  margin-top: 0.5em;
+
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.pricewrapper {
+  display: flex;
+
+  
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.Prices1 {
+  margin-left: 3em;
+  flex: 1;
+  
+
+  max-width: 30%;
+  
 }
 
-.logo {
-  height: 1em;
+.Prices1 h2{
+  color: white;
+  margin-top: 1em;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 2em;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+
+
+.Prices1 span {
+
+  font-size: 10px;
+  font-weight: 100;
+  color: gray;
+
 }
+
+.Prices1 .BuyButton {
+  text-align: center;
+  display: inline-block;
+  padding: 16.5px 14px;
+  background-color: #0063e5;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 340px;
+  min-width: auto;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+}
+
+.Prices1 .BuyButton:active {
+  transform: scale(0.98);
+}
+
+.Prices2 {
+  flex: 1;
+  
+  max-width: 30%;
+
+  
+}
+
+
+
